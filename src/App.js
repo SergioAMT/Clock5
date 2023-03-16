@@ -9,7 +9,7 @@ function App() {
   const [sessionTime, setsessionTime] = useState(25 * 60);
   const [timeOn, settimeOn] = useState(false);
   const [onBreak, setonBreak] = useState(false);
-  const [breakAudio, setbreakAudio] = useState(new Audio("./beep.mp3"));
+  const [breakAudio] = useState(new Audio("./beep.mp3"));
   
   const playBreakSound = () => {
     breakAudio.currentTime = 0
